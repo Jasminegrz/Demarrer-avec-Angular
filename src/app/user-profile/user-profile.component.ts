@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.css'],
 })
 export class UserProfileComponent {
-  title = 'Hello';
-  isAdmin: boolean = true;
-  changeAdmin() {
-    this.isAdmin = !this.isAdmin;
-  }
   user = {
     name: 'Doe',
     firstName: 'John',

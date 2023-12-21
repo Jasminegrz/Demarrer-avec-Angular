@@ -1,0 +1,6 @@
+<h1 [ngClass]="{ classIsAdmin: isAdmin }">{{ title }}</h1>
+<button>view</button>
+<button *ngIf="isAdmin">Edit</button>
+<button (click)="changeAdmin()">
+  {{ isAdmin ? "Change to not admin" : "Change to admin" }}
+</button>
