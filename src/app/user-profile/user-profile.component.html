@@ -16,3 +16,7 @@
   <button (click)="showAge()">Afficher/Masquer mon âge</button>
   <p [hidden]="!hiddenAge">Age: {{ user.age }}</p>
 </div>
+
+<h1 [ngClass]="{ classIsAdmin: isAdmin }">{{ title }}</h1>
+<button (click)="changeAdmin()">view</button>
+<button *ngIf="isAdmin">Edit</button>
